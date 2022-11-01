@@ -8,40 +8,41 @@
 </head>
 <body>
 
-<header> The Calculator  </header>
-<nav class="navbar"></nav>
+<header id="header">Calculator</header>
+<!-- <nav class="navbar"></nav> -->
 <div class="container">
 	
-
 <!-- les composants du calculatrice -->
-
-<div class="container-calculatrice" id="container">
-	<!-------- Ecran --------->
- <input  type="text" value="" id="ecran" placeholder="akram el basri " >
-
-	<button id="btn1" onclick="ajoute(this)">1</button>
-	<button id="btn2" onclick="ajoute(this)">2</button>
-	<button id="btn3" onclick="ajoute(this)">3</button>
-	<button id="btn4" onclick="ajoute(this)">4</button>
-	<button id="btn5" onclick="ajoute(this)">5</button>
-	<button id="btn6" onclick="ajoute(this)">6</button>
-	<button id="btn7" onclick="ajoute(this)">7</button>
-	<button id="btn8" onclick="ajoute(this)">8</button>
-	<button id="btn9" onclick="ajoute(this)">9</button>
-	<button id="btn0" onclick="ajoute(this)">0</button>
-	<button id="btnZero" onclick="ajoute(this)">.</button>
-	<button id="btnAdd" onclick="ajoute(this)">+</button>
-	<button id="btnSous" onclick="ajoute(this)">-</button>
-	<button id="btnMult" onclick="ajoute(this)">*</button>
-	<button id="btnDiv" onclick="ajoute(this)">/</button>
-	<button id="btnEqual" onclick="calcule()" >=</button>
-	<button id="btnMod" onclick="ajoute(this)">%</button>
-	<button id="btnDbl0" onclick="ajoute(this)">00</button>
-	<button id="btnTheme" onclick="modeBlack()" ondblclick="modeNormal()">theme</button><br>
-	<button id="btnDrop" onclick="DropNombres()">Drop</button>
-</div><br>
-<hr class="hr2">
-
+<div class="cal-container" id="container">
+	<div class="container-inpt">
+		<!-------- input result --------->
+		<input  type="text" value="" id="ecran" placeholder="" >
+	</div>
+	<div class="all-btns">
+		<!-- buttons  -->
+		<button id="btn1" onclick="ajoute(this)" >1</button>
+		<button id="btn2" onclick="ajoute(this)">2</button>
+		<button id="btn3" onclick="ajoute(this)">3</button>
+		<button id="btn4" onclick="ajoute(this)">4</button>
+		<button id="btn5" onclick="ajoute(this)">5</button>
+		<button id="btn6" onclick="ajoute(this)">6</button>
+		<button id="btn7" onclick="ajoute(this)">7</button>
+		<button id="btn8" onclick="ajoute(this)">8</button>
+		<button id="btn9" onclick="ajoute(this)">9</button>
+		<button id="btn0" onclick="ajoute(this)">0</button>
+		<button id="btnZero" onclick="ajoute(this)">.</button>
+		<button id="btnAdd" onclick="ajoute(this)">+</button>
+		<button id="btnSous" onclick="ajoute(this)">-</button>
+		<button id="btnMult" onclick="ajoute(this)">*</button>
+		<button id="btnDiv" onclick="ajoute(this)">/</button>
+		<button id="btnEqual" onclick="calcule()" >=</button>
+		<button id="btnMod" onclick="ajoute(this)">%</button>
+		<button id="btnDbl0" onclick="ajoute(this)">00</button>
+		<button id="btnTheme" onclick="modeBlack()" ondblclick="modeNormal()">theme</button><br>
+		<button id="btnDrop" onclick="DropNombres()">Drop</button>
+	</div>
+</div>
+<footer id="footer">ends</footer>
 
 <script type="text/javascript" src="calcule.js"></script>
 </body>
